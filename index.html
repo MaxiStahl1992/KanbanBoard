@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+        <title>IKanban</title>
+    </head>
+    <body>
+
+        <header>
+            <img src="https://img.icons8.com/external-glyph-geotatah/64/000000/external-agile-lean-startup-glyph-glyph-geotatah.png" alt="agile mindset picture with rocket"/>
+            <h1>IKanban</h1>
+        </header>
+
+        <div class="drag-container">
+            <!-- BACKLOG -->
+            <div class="container">
+                <div class="top">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/clipboard.png" alt=""/>
+                    <span>BACKLOG</span>
+                </div>
+                <div class="tasks">
+                    <ul id="taskListBacklog">
+                    </ul>
+                </div>
+                <div class="addTask" id="addTaskButtonBacklog" >
+                    <img src="https://img.icons8.com/material-rounded/48/000000/add.png" alt="" />
+                </div>
+                <div class="inputTask" id="inputTaskBacklog">
+                    <input type="text" id="inputBacklog">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/add.png" alt="" id="inputTaskButtonBacklog"/>
+                </div>
+            </div>
+
+            <!-- TO DO's -->
+            <div class="container">
+                <div class="top">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/list.png" alt=""/>
+                    <span>TO DO'S</span>
+                </div>
+                <div class="tasks">
+                    <ul id="taskListToDos">
+                    </ul>
+                </div>
+                <div class="addTask" id="addTaskButtonToDos">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/add.png" alt="" />
+                </div>
+                <div class="inputTask" id="inputTaskToDos">
+                    <input type="text" id="inputToDos">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/add.png" alt="" id="inputTaskButtonToDos" />
+                </div>
+            </div>
+
+            <!-- IN PROGRESS -->
+            <div class="container">
+                <div class="top">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/in-progress.png" alt=""/>
+                    <span>IN PROGRESS</span>
+                </div>
+                <div class="tasks">
+                    <ul id="taskListInProgress">
+                    </ul>
+                </div>
+                <div class="addTask" id="addTaskButtonInProgress">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/add.png" alt="" />
+                </div>
+                <div class="inputTask" id="inputTaskInProgress">
+                    <input type="text" id="inputInProgress">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/add.png" alt="" id="inputTaskButtonInProgress" />
+                </div>
+            </div>
+
+            <!--DONE -->
+            <div class="container">
+                <div class="top">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/microsoft-to-do-app.png" alt=""/>
+                    <span>DONE</span>
+                </div>
+                <div class="tasks">
+                    <ul id="taskListDone">
+                    </ul>
+                </div>
+                <div class="addTask" id="addTaskButtonDone">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/add.png" alt="" >
+                </div>
+                <div class="inputTask" id="inputTaskDone">
+                    <input type="text" id="inputDone">
+                    <img src="https://img.icons8.com/material-rounded/48/000000/add.png" alt="" id="inputTaskButtonDone"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="remove">
+            <div class="removeAll">
+                <img src="https://img.icons8.com/ios-filled/60/000000/minus.png" alt="" id="removeAllElements" />
+                <span>Remove All</span>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
